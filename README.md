@@ -39,7 +39,7 @@ Git & GitHub – Version control
 bash
 Copy
 Edit
-git clone https://github.com/your-username/AI-Chat-Application.git
+git clone [https://github.com/your-username/AI-Chat-Application.git](https://github.com/challasumanth64/Chat-Application-Gemini-ai-)
 cd AI-Chat-Application
 2️⃣ Backend Setup
 
