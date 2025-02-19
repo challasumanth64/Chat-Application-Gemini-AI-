@@ -1,0 +1,210 @@
+/* Basic reset and body styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+  padding: 0;
+  margin: 0;
+}
+
+/* Full screen container */
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch; /* Stretch the app to full width */
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Prevent overflow */
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title styling */
+.app-title {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Authentication section styling */
+.auth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.auth-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.auth-button {
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 48%;
+  font-size: 14px;
+}
+
+.auth-button:hover {
+  background-color: #45a049;
+}
+
+/* Chat section styling */
+.chat {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 60%; /* Occupy 60% of the screen height */
+  background-color: #f9f9f9;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 80%;
+}
+
+.message.user {
+  background-color: #e1f5fe;
+  align-self: flex-end;
+}
+
+.message.ai {
+  background-color: #f1f1f1;
+  align-self: flex-start;
+}
+
+.input-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.send-button {
+  padding: 12px 24px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.send-button:hover {
+  background-color: #006c8e;
+}
+
+/* Export buttons */
+.export-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.export-button {
+  padding: 12px 24px;
+  background-color: #FFC107;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.export-button:hover {
+  background-color: #e0a800;
+}
+
+/* Logout button styling */
+.logout-button {
+  padding: 12px 24px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Ensuring full responsiveness */
+@media (max-width: 768px) {
+  .app-title {
+    font-size: 22px;
+  }
+
+  .auth-button,
+  .send-button,
+  .export-button,
+  .logout-button {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+
+  .input-field {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .chat-window {
+    height: 50%;
+  }
+}
