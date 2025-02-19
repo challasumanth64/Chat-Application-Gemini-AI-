@@ -36,27 +36,6 @@ Git & GitHub – Version control
 4️⃣ Users can download chat history as PDF or email it.
 5️⃣ WebSockets ensure real-time chat updates.
 
-📂 Project Structure
-bash
-Copy
-Edit
-chat-application/
-├── backend/                # Node.js & Express backend
-│   ├── server.js           # Main server file
-│   ├── models/             # MongoDB models
-│   ├── routes/             # API endpoints
-│   ├── .env                # Environment variables (ignored in Git)
-├── frontend/               # React frontend
-│   ├── src/
-│   │   ├── components/     # UI components
-│   │   ├── App.js          # Main React app
-│   │   ├── styles.css      # CSS styling
-│   ├── package.json        # React dependencies
-├── .gitignore              # Prevents sensitive files from uploading
-├── README.md               # Project documentation
-🔧 Installation & Setup
-1️⃣ Clone the Repository
-
 bash
 Copy
 Edit
